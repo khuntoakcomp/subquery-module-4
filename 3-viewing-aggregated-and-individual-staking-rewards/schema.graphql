@@ -1,0 +1,12 @@
+type SumReward @entity{
+  id: ID! # AccountId
+  totalReward: BigInt!
+  blockheight: Int!
+}
+
+type StakingReward @entity {
+  id: ID! #blockHieght-eventIdx
+  account: SumReward!
+  balance: BigInt!
+  date: Date!
+}

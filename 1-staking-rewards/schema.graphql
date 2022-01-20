@@ -1,0 +1,7 @@
+type StakingReward @entity {
+  id: ID! #blockHieght-eventIdx
+  account: String!
+  balance: BigInt!
+  date: Date!
+  blockHeight: Int!
+}
